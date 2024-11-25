@@ -1,0 +1,1332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/genovast');
+
+:root {
+    --font: "Montserrat", sans-serif;
+    --genovast: 'Genovast', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root{
+    --main-color: #f3f3f3;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--main-color) !important;
+}
+
+nav.navbar {
+    padding-top: 4vh;
+    padding-bottom: 1vh;
+    background-color: transparent;
+    background-image: none;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+    /* border-bottom: 0.01vw solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+}
+
+.navbar.sticky{
+        background-color: #fff;
+        /* color: white; */
+        filter: drop-shadow(0 0 10px #000);
+}
+
+nav.navbar .nav-container .right-side button{
+    background-color: #000;
+    /* border: 1px solid #000; */
+}
+
+.nav-container {
+    width: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.nav-container a {
+    font-size: 1.5vw;
+    font-family: var(--font);
+    color: black;
+}
+.nav-container a:active{
+    font-size: 1.5vw;
+    font-family: var(--font);
+    color: black;
+    font-style: none;
+    text-decoration: none;
+}
+
+.nav-container a:hover{
+    color: #1d1d1d;
+}
+
+.navbar-collapse ul {
+    gap: 2vw;
+}
+
+section#section-brand{
+    width: 100vw;
+    height: fit-content;
+    background-color: #fff;
+    background-image: none;
+}
+
+.brands {
+    padding: 8vh 2vw;
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #db6161; */
+    gap: 3vh;
+}
+
+.brand-title {
+    /* background-color: #fff; */
+    font-size: 5vw;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+}
+
+.grid-brands {
+    display: grid;
+    /* gap: 1vw; */
+    /* border-right: 1px solid #000; */
+    /* background-color: #42861e; */
+    /* background-color: #eaeaea;  */
+    grid-column: 10px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.square {
+    /* width: 5vw; */
+    border-right: 1px solid #000;
+    height: 9vw;
+    /* background-color: #a83f3f; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square img {
+    width: 9vw;
+    /* height: 5vw; */
+}
+
+.s17,
+.s18,
+.s19,
+.s20 {
+    border: 0px;
+}
+
+
+/* TABLET */
+@media only screen and (max-width: 1280px) {
+    .brands {
+        padding: 8vh 2vw;
+        font-family: var(--font);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* background-color: #db6161; */
+        gap: 6vh;
+    }
+
+    .brand-title {
+        /* background-color: #fff; */
+        font-size: 4vw;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .grid-brands {
+        display: grid;
+        /* gap: 1vw; */
+        /* border-right: 1px solid #000; */
+        /* background-color: #42861e; */
+        /* background-color: #eaeaea;  */
+        grid-column: 10px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .square {
+        /* width: 5vw; */
+        border-right: 1px solid #000;
+        height: 15vh;
+        /* background-color: #a83f3f; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .square img {
+        width: 13vh;
+        /* height: 5vw; */
+    }
+
+    .s17,
+    .s18,
+    .s19,
+    .s20 {
+        border-right: 1px solid #000;
+    }
+
+    .s20,
+    .s4,
+    .s7,
+    .s13,
+    .s10 {
+        border-right: 0px;
+    }
+
+
+}
+
+/* HANDPHONE*/
+@media only screen and (max-width: 500px) {
+    .brands {
+        padding: 4vh 2vw;
+        font-family: var(--font);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* background-color: #db6161; */
+        gap: 2vh;
+    }
+
+    .brand-title {
+        /* background-color: #fff; */
+        font-size: 4vw;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .grid-brands {
+        display: grid;
+        /* gap: 1vw; */
+        /* border-right: 1px solid #000; */
+        /* background-color: #42861e; */
+        /* background-color: #eaeaea;  */
+        grid-column: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .square {
+        /* width: 5vw; */
+        border-right: 1px solid #000;
+        height: 9vh;
+        /* background-color: #a83f3f; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .square img {
+        width: 8vh;
+        /* height: 5vw; */
+    }
+
+    .s17,
+    .s18,
+    .s19,
+    .s20 {
+        border-right: 1px solid #000;
+    }
+
+    .s5,
+    .s2,
+    .s4,
+    .s7,
+    .s10,
+    .s12,
+    .s13,
+    .s15,
+    .s18,
+    .s20 {
+        border-right: 0vw;
+    }
+}
+
+
+section{
+    border-top: 1px solid var(--main-color);
+    width: 101%;
+    height: 100vh;
+    background-image: url(Image/Project/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* PROJECT START */
+
+section.project-cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-container{
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: #fff; */
+}
+
+/* nav.project-nav{ */
+    /* position: absolute; */
+    /* top: 105%; */
+    /* right: 3%; */
+/* } */
+
+nav.project-nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+}
+
+
+nav.project-nav ul li a{
+    color: var(--main-color);
+    text-decoration: none;
+    /* font-size: 2rem; */
+    font-size: clamp(1.3rem, 4vw, 2.2rem);
+}
+
+nav.project-nav ul li a sup{
+    color: rgb(255, 123, 0);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+nav.project-nav ul li{
+    list-style: none;
+}
+
+.project-text{
+    color: var(--main-color);
+
+    /* position: absolute; */
+    /* left: 30px; */
+    /* bottom: 10px; */
+    font-size: clamp(5rem, 8vw, 8rem);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    /* top: %; */
+    line-height: clamp(4rem, 8vw, 6rem);
+}
+
+/* PROJECT RESPONSIVE */
+
+@media screen and (max-width: 455px){
+    .project-text{
+        font-size: clamp(2rem, 20vw, 5rem);
+        left: 0;
+    }    
+}
+
+@media screen and (max-width: 325px){
+    nav.project-nav ul li a{
+        font-size: clamp(1rem, 4vw, 1.3rem);
+    }
+}
+
+
+/* PROJECT END */
+
+/* FOOD POSTERS START */
+
+#food-posters{
+    height: fit-content;
+    padding-bottom: 4%;
+}
+
+.food-wrapper{
+    margin-top: 4%;
+    margin-inline: 4%;
+}
+
+.food-header{
+    margin-bottom: 2vw;
+    font-size: clamp(2rem, 10vw, 6rem);
+}
+
+.food-text{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.food-poster-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: .4vw;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.food-poster{
+    width: 31%;
+    height: 39%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.food-poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.poster-desc{
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+/* FOOD POSTERS RESPONSIVE */
+
+@media screen and (max-width: 550px) {
+    .food-poster-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        row-gap: 7vw;
+        margin-top: 5vw;
+    }
+
+    .food-poster{
+        width: 44vw;
+        height: 55vw;
+    }
+
+    .food-desc{
+        margin-bottom: 5vw;
+    }
+}
+
+/* FOOD POSTERS END */
+
+/* VARIETY SHOW START */
+
+#variety-show{
+    height: fit-content;
+    padding-bottom: 4%;
+}
+
+.variety-wrapper{
+    margin-inline: 4%;
+    margin-top: 4%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.variety-header{
+    margin-bottom: 2vw;
+    font-size: clamp(1rem, 7vw, 6rem);
+}
+
+.variety-text{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.variety-posters{
+    width: 90vw;
+    height: 20vw;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+}
+
+.variety-poster{
+    width: 100%;
+    height: 100%;
+}
+
+.variety-poster:first-child, .variety-poster:nth-child(2){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* .variety-poster:first-child img, .variety-poster:nth-child(2) img{ */
+/* } */
+
+.variety-poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.variety-date{
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 2rem);
+    margin-top: 15vw;
+}
+
+
+.variety-poster-desc{
+    margin-top: 3vw;
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.5rem)
+}
+
+
+
+/* VARIETY SHOW RESPONSIVE */
+
+@media screen and (max-width:750px) {
+    .variety-poster:first-child, .variety-poster:nth-child(2){
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    
+    .variety-poster{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .variety-date{
+        margin-top: 110vw;
+    }
+
+    .variety-poster-desc{
+        margin-top: 3vw;
+    }
+}
+
+/* VARIETY SHOW END */
+
+/* SOCIAL MEDIA MANAGEMENT START */
+
+
+#socmed-management, #socmed-management2{
+    height: fit-content;
+    padding-bottom: 5%;
+}
+
+.socmed-wrapper{
+    margin-inline: 4%;
+    margin-top: 4%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socmed-header{
+    margin-bottom: 2vw;
+    font-size: clamp(.6rem, 6vw, 6rem);
+}
+
+.socmed-text{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.socmed-posters{
+    width: 90vw;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    gap: 5px;
+}
+
+.socmed-poster{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    /* padding-right: 5%; */
+}
+
+.socmed-poster{
+    width: 100%;
+    text-align: center;
+    font-size: clamp(.2rem, 2vw ,1.3rem);
+}
+
+.socmed-info p{
+    width: 100%;
+    text-align: center;
+    font-size: clamp(.6rem, 2vw ,1.5rem);
+    margin-block: 6px;
+}
+
+.socmed-info p:first-child{
+    font-weight: bold;
+}
+
+
+
+.socmed-poster img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.socmed-poster:first-child img{
+    width: 105%;
+}
+
+.socmed-poster:first-child{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* SOCIAL MEDIA MANAGEMENT RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+    #socmed-management{
+        padding-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .socmed-wrapper{
+        padding-right: 5%;
+    }
+    .socmed-posters{
+        grid-template-columns: repeat(6, 16.66%);
+    }
+    .socmed-poster:first-child{
+        grid-column: span 6;
+        grid-row: span 6;
+        align-self: center;
+        justify-self: center;
+        /* padding-right: 5%; */
+        width: 80%;
+    }
+
+    .socmed-poster:first-child img{
+        grid-column: span 6;
+        grid-row: span 6;
+        align-self: center;
+        justify-self: center;
+        /* padding-right: 5%; */
+        width: 100%;
+    }
+    
+    .socmed-poster{
+        grid-column: span 2;
+        grid-row: span 2;
+        width: 75%;
+        height: 75%;
+        width: 100%;
+    }
+
+    #socmed-management{
+        padding-bottom: 5%;
+    }
+}
+
+/* SOCIAL MEDIA MANAGEMENT END */
+
+
+/* SOCIAL MANAGEMENT PART 2 START */
+
+.socmed-posters2{
+    width: 90vw;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(6, 16.66%);
+    gap: 5px;
+    padding-right: 3%;
+    padding-left: 1%;
+}
+
+.socmed-poster2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+/* 
+.socmed-poster2:last-child, .socmed-poster2:nth-last-child(3){
+    padding-right: 4vw;
+} */
+
+.socmed-poster2 .socmed-info{
+    text-align: center;
+    font-size: clamp(1rem, 4vw ,1.3rem);
+}
+
+.socmed-poster2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.socmed-poster2:first-child, .socmed-poster2:nth-child(2){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.socmed-desc{
+    margin-top: 5vw;
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+/* SOCIAL MANAGEMENT PART 2 RESPONSIVE */
+@media screen and (max-width: 450px){
+    
+    .socmed-poster2:first-child, .socmed-poster2:nth-child(2){
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+
+    .socmed-posters2{
+        grid-template-columns: repeat(8, 12.5%);
+        padding-left: 0;
+        margin-right: 7%;
+    }
+
+    .socmed-poster2{
+        grid-row: span 2;
+        grid-column: span 2;
+        width: 80%;
+    }
+
+    .socmed-wrapper.socmed-wrapper2{
+        padding: 0;
+    }
+}
+/* SOCIAL MANAGEMENT PART 2 END */
+
+/* FOOD MENU START */
+
+#food-menus{
+    height: fit-content;
+    padding-bottom: 4%;
+}
+
+.menu-wrapper{
+    margin-top: 4%;
+    margin-inline: 4%;
+}
+
+.menu-header{
+    margin-bottom: 2vw;
+    font-size: clamp(2rem, 10vw, 6rem);
+}
+
+.menu-text{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.menu-poster-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: .4vw;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.menu-poster{
+    width: 31%;
+    height: 39%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    justify-self: center;
+    align-self: center;
+}
+
+.menu-poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.menu-desc{
+    font-weight: bold;
+    text-align: center;
+    font-size: clamp(.8rem, 2vw, 1.5rem);
+}
+
+.menu-desc span{
+    font-weight: normal;
+}
+/* FOOD MENU RESPONSIVE */
+
+@media screen and (max-width: 550px) {
+    .menu-poster-wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        row-gap: 3vw;
+    }
+
+    .menu-poster{
+        grid-column: span 2;
+        grid-row: span 2;
+        width: 99%;
+        height: 55vw;
+    }
+    .menu-poster:last-child{
+        grid-column: span 4;
+        grid-row: span 2;
+        width: 100%;
+    }
+}
+
+/* FOOD MENU END */
+
+/* FOOD MENU PART 2 START */
+
+
+
+/* FOOD MENU PART 2 RESPONSIVE */
+
+
+@media screen and (max-width: 550px) {
+    .menu-poster-wrapper.menu-poster-wrapper2{
+        display: flex;
+        grid-template-columns: repeat(4, 25%);
+        row-gap: 3vw;
+    }
+}
+
+/* FOOD MENU PART 2 END */
+
+/* BANNER START */
+
+#banner-section{
+    height: fit-content;
+    padding-bottom: 3%;
+}
+
+.banner-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+}
+
+.banner-header{
+    margin-bottom: 2vw;
+    font-size: clamp(2rem, 10vw, 6rem);
+}
+
+.banner-text{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.banner-poster-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: .4vw;
+    width: 100%;
+    justify-content: center;
+    /* margin-bottom: 5vh; */
+    align-items: center;
+}
+
+.banner-poster{
+    margin-left: 3vw;
+    width: 50%;
+    height: 39%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    justify-self: center;
+    align-self: center;
+}
+
+.banner-poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-desc{
+    width: 25%;
+    height: 100%;
+    font-size: 1.2rem;
+    margin-left: 5%;
+    text-wrap: balance;
+}
+
+/* BANNER RESPONSIVE */
+@media screen and (max-width:1200px){
+    .banner-desc{
+        font-size: clamp(0.7rem, 5vw, 1rem);
+    }
+}
+
+@media screen and (max-width:970px) {
+    .banner-poster-wrapper{
+        flex-direction: column;
+    }
+
+    .banner-desc{
+        text-align: center;
+        width: 75%;
+        margin-left: 0;
+    }
+
+    .banner-poster{
+        margin-left: 0;
+        width: 80%;
+    }
+}
+/* BANNER END */
+
+/* BROCHURE START */
+
+.brochure-header{
+    margin-bottom: 2vw;
+    font-size: clamp(2rem, 10vw, 6rem);
+}
+
+.brochure-text{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+#brochures{
+    height: fit-content;
+    padding-bottom: 4%;
+}
+
+.brochure-wrapper{
+    margin-top: 4%;
+    margin-inline: 4%;
+}
+
+.brochure-poster-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: .4vw;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.brochure-poster{
+    width: 31%;
+    height: 39%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    justify-self: center;
+    align-self: center;
+}
+
+.brochure-poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* FOOD MENU RESPONSIVE */
+
+@media screen and (max-width: 550px) {
+    .brochure-poster-wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        row-gap: 3vw;
+    }
+
+    .brochure-poster{
+        grid-column: span 2;
+        grid-row: span 2;
+        width: 99%;
+        height: 55vw;
+    }
+    .brochure-poster:last-child{
+        grid-column: span 4;
+        grid-row: span 2;
+        width: 100%;
+    }
+
+    .brochure-poster-wrapper.menu-poster-wrapper2{
+        display: flex;
+        grid-template-columns: repeat(4, 25%);
+        row-gap: 3vw;
+    }
+}
+
+/* BROCHURE RESPONSIVE */
+/* BROCHURE END*/
+
+
+/* CONTACT START */
+
+/* .all-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3f3f3;
+    color: #1d1d1d;
+}
+
+.contact-wrapper{
+    margin-left: -30vw;
+    margin-top: 20vh;
+}
+
+.contact-header{
+    font-size: 9vw;
+}
+
+.contact{
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 20%;
+}
+
+.contact-info{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: left;
+    height: fit-content;
+    gap: 1vw;
+}
+
+.contact-info .text-contact{
+    font-size: 1.5vw;
+}
+
+.contact-info svg{
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+
+.contact-info .text-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} */
+
+section.contact {
+    background-color: #fff;
+    background-image: none;
+    padding-left: 6vw;
+    color: black;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    overflow: hidden;
+}
+
+.contact-title {
+    width: 70%;
+    font-size: 150px;
+    margin-top: 17.5vw;
+    font-weight: 700;
+    font-family: var(--helvetica);
+    margin-bottom: 8vw;
+}
+
+.sosmed {
+    /* border-top: 0.1vw solid #000; */
+    width: 100%;
+    margin-top: 1vw;
+    padding-top: 1vw;
+    display: flex;
+    /* font-weight: 900; */
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1vw;
+    margin-bottom: 5vw;
+}
+
+svg {
+    width: 3vh;
+    height: 3vh;
+}
+
+.instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    font-family: var(--font);
+    font-size: 150%;
+    font-weight: 500;
+}
+
+.whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+    font-size: 150%;
+    font-weight: 500;
+    gap: 0.5vw;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+    font-size: 150%;
+    font-weight: 500;
+    gap: 0.5vw;
+}
+
+/* TABLET */
+@media only screen and (max-width: 1280px) {
+
+    .contact-title {
+            width: 70%;
+            font-size: 150px;
+            margin-top: 17.5vw;
+            line-height: 15vh;
+            font-weight: 700;
+            font-family: var(--helvetica);
+            margin-bottom: 8vw;
+        }
+
+    .sosmed {
+        /* border-top: 0.1vw solid #000; */
+        width: 100%;
+        margin-top: 1vw;
+        padding-top: 1vw;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1vw;
+    }
+
+    svg {
+        width: 3vh;
+        height: 3vh;
+    }
+
+    .instagram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5vw;
+        font-family: var(--font);
+        font-size: 150%;
+        font-weight: 500;
+    }
+
+    .whatsapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font);
+        font-size: 150%;
+        font-weight: 500;
+        gap: 0.5vw;
+    }
+
+    .email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font);
+        font-size: 150%;
+        font-weight: 500;
+        gap: 0.5vw;
+    }
+}
+
+/* HANDPHONEE */
+@media only screen and (max-width: 896px) {
+
+    nav.navbar {
+            padding-top: 4vh;
+            padding-bottom: 1vh;
+            /* background-color: transparent; */
+            background-image: none;
+            position: fixed;
+            width: 100vw;
+            z-index: 999;
+            /* border-bottom: 0.01vw solid #fff; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 1s ease-in-out;
+        }
+    
+        .navbar {
+            background-color: #fff;
+            /* color: white; */
+            filter: drop-shadow(0 0 10px #000);
+        }
+    
+    
+    
+        .nav-container {
+            width: 90%;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+        }
+    
+        .nav-container a {
+            font-size: 2vh;
+            font-family: var(--font);
+            /* color: rgb(255, 255, 255); */
+        }
+    
+        .nav-container a:active {
+            font-size: 1.5vw;
+            font-family: var(--font);
+            color: rgb(255, 255, 255);
+            font-style: none;
+            text-decoration: none;
+        }
+    
+        .navbar-collapse ul {
+            gap: 2vw;
+        }
+    .contact-title {
+        width: 70%;
+        font-size: 23vw;
+        line-height: 20vw;
+        margin-top: 17.5vw;
+        font-weight: 700;
+        font-family: var(--helvetica);
+        margin-bottom: 20vh;
+    }
+
+    .sosmed {
+        /* border-top: 0.1vw solid #000; */
+        width: 100%;
+        margin-top: 1vw;
+        padding-top: 1vw;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1vw;
+    }
+
+    .instagram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+        font-family: var(--font);
+        font-size: 110%;
+        font-weight: 500;
+    }
+
+    svg {
+        width: 3vh;
+        height: 3vh;
+    }
+
+    .whatsapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font);
+        font-size: 110%;
+        font-weight: 500;
+        gap: 1vh;
+    }
+
+    .email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font);
+        font-size: 110%;
+        font-weight: 500;
+        gap: 1vh;
+    }
+}
+
+/* CONTACT RESPONSIVE */
+
+@media screen and (max-width: 650px) {
+    .contact-wrapper{
+        display: flex;
+        /* flex-direction: row; */
+        flex-direction: column;
+        margin-top: 10vh;
+        margin-left: -15vw;
+    }
+    .contact-header{
+        font-size: 5rem;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact-wrapper{
+        margin-top:4vh;
+        margin-left: 4vw;
+    }
+    
+    .contact-header{
+        font-size: 3rem;
+        width: 200px;
+    }
+}
+
+/* CONTACT END */

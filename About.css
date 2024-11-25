@@ -1,0 +1,1337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/genovast');
+
+:root {
+    --font: "Montserrat", sans-serif;
+    --genovast: 'Genovast', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    background-image: url(Image/About/background.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 3vw;
+}
+
+nav.navbar {
+    padding-top: 4vh;
+    padding-bottom: 1vh;
+    /* background-color: transparent; */
+    background-image: none;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+    /* border-bottom: 0.01vw solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+}
+
+nav.navbar .nav-container .right-side button {
+    background-color: #fff;
+}
+
+.navbar {
+    background-color: #fff;
+    color: #000;
+    filter: drop-shadow(0 0 10px #000);
+}
+
+.navbar a {
+    /* background-color: #fff; */
+    color: #000;
+    /* filter: drop-shadow(0 0 10px #000); */
+}
+
+.nav-container {
+    width: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.nav-container a {
+    font-size: 1.5vw;
+    font-family: var(--font);
+    /* color: rgb(255, 255, 255); */
+}
+
+.nav-container a:active {
+    font-size: 1.5vw;
+    font-family: var(--font);
+    color: rgb(255, 255, 255);
+    font-style: none;
+    text-decoration: none;
+}
+
+.navbar-collapse ul {
+    gap: 2vw;
+}
+
+#about {
+    height: fit-content;
+    padding: 5vw 2vw 3vw 2vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+
+.above {
+    display: flex;
+    gap: 1.5vw;
+}
+
+
+
+/* CINDY LIM ABOUT ME DESCRIPTION */
+
+.about-me {
+    width: 68vw;
+    height: 25vw;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vw;
+    gap: 2vw;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.photo img {
+    width: 22vw
+}
+
+.my-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 41vw;
+    height: 100%;
+    margin-top: -1.5vw;
+}
+
+.name {
+    font-family: var(--font);
+    font-size: 7vw;
+    font-weight: 900;
+    font-style: italic;
+    font-stretch: 600;
+    transform: scaleY(0.8);
+}
+
+.description {
+    font-family: var(--font);
+    font-size: 1.085vw;
+    text-align: center;
+    margin-bottom: 1.5vw;
+}
+
+.sosmed {
+    /* border-top: 0.1vw solid #000; */
+    width: 100%;
+    /* margin-top: 1vw; */
+    padding-top: 1vw;
+    display: flex;
+    /* font-weight: 900; */
+    align-items: start;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1vw;
+    margin-bottom: 1vw;
+}
+
+.sosmed a {
+    color: black;
+    display: flex;
+    gap: 0.5vw;
+    font-style: none;
+    text-decoration: none;
+}
+
+svg {
+    width: 3vh;
+    height: 3vh;
+}
+
+.instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    font-family: var(--font);
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+    font-size: 1vw;
+    font-weight: 500;
+    gap: 0.5vw;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+    font-size: 1vw;
+    font-weight: 500;
+    gap: 0.5vw;
+}
+
+/* TABLET */
+@media only screen and (max-width: 1280px) {
+
+    .contact-title {
+        width: 70%;
+        font-size: 150px;
+        margin-top: 17.5vw;
+        line-height: 15vh;
+        font-weight: 700;
+        font-family: var(--helvetica);
+        margin-bottom: 8vw;
+    }
+
+    .sosmed {
+        /* border-top: 0.1vw solid #000; */
+        width: 100%;
+        margin-top: 1vw;
+        padding-top: 1vw;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1vw;
+    }
+
+    svg {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .instagram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5vw;
+        font-family: var(--font);
+        font-size: 150%;
+        font-weight: 500;
+        /* background-color: #7e4646; */
+    }
+
+    .whatsapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font);
+        font-size: 150%;
+        font-weight: 500;
+        gap: 0.5vw;
+        /* background-color: #4f9c36; */
+    }
+
+    .email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font);
+        font-size: 150%;
+        font-weight: 500;
+        gap: 0.5vw;
+        /* background-color: #ffffff; */
+    }
+}
+
+/* HANDPHONEE */
+@media only screen and (max-width: 896px) {
+    .contact-title {
+        width: 70%;
+        font-size: 23vw;
+        line-height: 20vw;
+        margin-top: 17.5vw;
+        font-weight: 700;
+        font-family: var(--helvetica);
+        margin-bottom: 20vh;
+    }
+
+    .sosmed {
+        /* border-top: 0.1vw solid #000; */
+        width: 100%;
+        margin-top: 1vw;
+        padding-top: 1vw;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1vh;
+    }
+
+    .instagram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+        font-family: var(--font);
+        font-size: 1vw;
+        font-weight: 500;
+        padding: 0;
+    }
+
+    .sosmed a svg {
+        width: 1.2vw;
+        min-width: 1.5vh;
+        height: 1.2vw;
+        min-height: 1.5vh;
+    }
+    
+    
+
+    .sosmed a{
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+    }
+
+    .whatsapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font);
+        font-size: 1vw;
+        font-weight: 500;
+        gap: 1vh;
+        margin-top: -1vw;
+        padding: 0;
+    }
+
+    .email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font);
+        font-size: 1vw;
+        font-weight: 500;
+        gap: 1vh;
+        margin-top: -1vw;
+        padding: 0;
+    }
+}
+
+/* CINDY LIM ABOUT ME DESCRIPTION */
+
+
+
+
+
+
+
+/* CINDY LIM EDUCATION DESCRIPTION */
+
+.education {
+    width: 27vw;
+    height: 25vw;
+    background-color: #fff;
+    border-radius: 1vw;
+}
+
+.edu-title {
+    font-family: var(--genovast);
+    font-size: 3.5vw;
+    line-height: 3vw;
+    padding: 0.5vw 1vw;
+    text-align: right;
+    border-bottom: 0.1vw solid #000;
+}
+
+.edu-title span {
+    display: none;
+}
+
+.high-school {
+    width: 100%;
+    height: 35%;
+    font-size: 2.2vw;
+    font-family: var(--font);
+    font-weight: 900;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 0.1vw solid #000;
+}
+
+.school-name {
+    width: 70%;
+    text-align: center;
+    transform: scaleY(0.8);
+    line-height: 2vw;
+}
+
+.school-major {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+.collage {
+    width: 100%;
+    height: 36%;
+    font-size: 2vw;
+    font-family: var(--font);
+    font-weight: 900;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.collage-name {
+    width: 100%;
+    text-align: center;
+    transform: scaleY(0.8);
+    line-height: 2vw;
+}
+
+.collage-major {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+/* CINDY LIM EDUCATION DESCRIPTION */
+
+
+
+
+
+
+/* CINDY LIM WORKING EXPERIENCE */
+
+.work {
+    width: 50vw;
+    height: 18vw;
+    background-color: #fff;
+    border-radius: 1vw;
+    padding: 0.5vw 1.5vw;
+}
+
+.work-title {
+    font-family: var(--genovast);
+    font-size: 3vw;
+    padding: 0 1vw;
+    border-bottom: 0.1vw solid #000;
+}
+
+.work-place {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.work-exp-1 img,
+.work-exp-2 img,
+.work-exp-3 img {
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-exp {
+    width: 33.33333333%;
+    margin-top: 0.5vw;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--font);
+    border-right: 0.1vw solid #000;
+}
+
+.work-description {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.period {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.month {
+    font-size: 0.6vw;
+    font-weight: 600;
+    width: 70%;
+    margin-left: -0.6vw;
+    /* background-color: orange; */
+}
+
+.year {
+    margin-top: -0.2vw;
+    font-size: 1.5vw;
+    font-weight: 900;
+}
+
+.job {
+    font-size: 0.8vw;
+    font-weight: 600;
+}
+
+.work-exp-3 .work-description {
+    margin-top: -1.6vw;
+    text-align: center;
+}
+
+.work-exp-3 .work-description .period .month {
+    margin-left: -2.4vw;
+}
+
+.work-exp-3 {
+    border-right: 0vw solid;
+}
+
+/* CINDY LIM WORKING EXPERIENCE */
+
+
+
+
+
+
+/* CINDY  LIM SKILLS DESCRIPTION*/
+
+.skill img {
+    width: 48vw;
+    position: absolute;
+    top: 25vw;
+    left: 51vw;
+}
+
+/* CINDY  LIM SKILLS DESCRIPTION*/
+
+
+
+
+
+/* FOOTER */
+.footer {
+    /* background-color: #460707; */
+    width: 97vw;
+    height: 6vh;
+    margin: 0.5vw;
+    margin-bottom: 1vw;
+    padding-top: 1vw;
+    display: flex;
+    border-top: 0.1vw solid #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-email {
+    color: #fff;
+    font-family: var(--font);
+    font-size: 1vw;
+    font-weight: 600;
+
+}
+
+/* FOOTER */
+
+
+
+
+
+
+/* TABLET */
+@media only screen and (max-width: 1280px) {
+
+
+    section {
+        padding-top: 7vh;
+    }
+
+    .above,
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom {
+        display: flex;
+    }
+
+    /* CINDY LIM ABOUT ME DESCRIPTION */
+
+    .about-me {
+        min-width: 68vh;
+        /* min-height: 80vh; */
+        height: fit-content;
+        flex-direction: column;
+        padding: 2vh 1vh;
+    }
+
+    .photo img {
+        width: 50vh
+    }
+
+    .my-description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        margin-top: -4vh;
+    }
+
+    .name {
+        font-family: var(--font);
+        font-size: 10vh;
+        font-weight: 900;
+        font-style: italic;
+        font-stretch: 600;
+        transform: scaleY(0.8);
+    }
+
+    .description {
+        font-family: var(--font);
+        font-size: 2.17vh;
+        text-align: center;
+        margin-bottom: 1.5vw;
+    }
+
+    .sosmed {
+        border-top: 0.1vw solid #000;
+        width: 100%;
+        margin-top: 2vh;
+        padding-top: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2vw;
+    }
+
+    .instagram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5vw;
+        font-family: var(--font);
+        font-size: 1.4vh;
+        font-weight: 500;
+    }
+
+    .whatsapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font);
+        font-size: 1.4vh;
+        font-weight: 500;
+        gap: 0.5vw;
+    }
+
+    .email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font);
+        font-size: 1.4vh;
+        font-weight: 500;
+        gap: 0.5vw;
+    }
+
+
+    /* CINDY LIM ABOUT ME DESCRIPTION */
+
+
+    /* CINDY LIM EDUCATION DESCRIPTION */
+
+    .education {
+        min-width: 68vh;
+        width: 100%;
+        min-height: 20vh;
+        height: fit-content;
+        background-color: #fff;
+        border-radius: 1vw;
+    }
+
+    .edu-title {
+        font-family: var(--genovast);
+        font-size: 5vw;
+        line-height: 6vh;
+        padding: 2vw 2vw;
+        text-align: center;
+        /* width: 100%; */
+        border-bottom: 0.1vw solid #000;
+    }
+
+    .edu-title span {
+        width: fit-content;
+        display: inline;
+    }
+
+    .edu-title p {
+        display: none;
+    }
+
+    .high-school {
+        width: 100%;
+        height: 10vw;
+        font-size: 3vw;
+        font-family: var(--font);
+        font-weight: 900;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-bottom: 0.1vw solid #000;
+    }
+
+    .school-name {
+        width: 70%;
+        text-align: center;
+        transform: scaleY(0.8);
+        line-height: 4vh;
+    }
+
+    .school-major {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2vh;
+    }
+
+    .collage {
+        width: 100%;
+        height: 10vw;
+        font-size: 3vw;
+        font-family: var(--font);
+        font-weight: 900;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .collage-name {
+        width: 100%;
+        text-align: center;
+        transform: scaleY(0.8);
+        line-height: 4vh;
+    }
+
+    .collage-major {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2vh;
+    }
+
+    /* CINDY LIM EDUCATION DESCRIPTION */
+
+
+
+    /* CINDY LIM WORKING EXPERIENCE */
+    .work {
+        width: 96%;
+        min-height: 27vh;
+        height: fit-content;
+        background-color: #fff;
+        border-radius: 1vw;
+        padding: 1vw 1.5vw;
+        margin-bottom: 2vh;
+    }
+
+    .work-title {
+        font-family: var(--genovast);
+        font-size: 4vw;
+        padding: 1vh 1vw;
+        border-bottom: 0.1vw solid #000;
+    }
+
+    .work-place {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .work-exp-1 img,
+    .work-exp-2 img,
+    .work-exp-3 img {
+        width: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .work-exp {
+        width: 33.33333333%;
+        margin-top: 1vh;
+        height: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: var(--font);
+        border-right: 0.1vw solid #000;
+    }
+
+    .work-description {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .period {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .month {
+        font-size: 1.2vh;
+        font-weight: 600;
+        width: 70%;
+        /* margin-left: -0.6vw; */
+        /* background-color: orange; */
+    }
+
+    .year {
+        margin-top: -0.2vw;
+        font-size: 2vw;
+        font-weight: 900;
+    }
+
+    .job {
+        font-size: 1.6vh;
+        font-weight: 600;
+    }
+
+    .work-exp-3 .work-description {
+        margin-top: -2vh;
+        text-align: center;
+    }
+
+    .work-exp-3 .work-description .period .month {
+        margin-left: 0vw;
+    }
+
+    .work-exp-3 {
+        border-right: 0vw solid;
+    }
+
+    /* CINDY LIM WORKING EXPERIENCE */
+
+
+    /* CINDY  LIM SKILLS DESCRIPTION*/
+    .skill {
+        min-width: 80vw;
+        width: 90vw;
+        height: 20vh;
+        position: relative;
+        /* background-color: #a12525; */
+        margin-bottom: 25vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .skill img {
+        width: 100%;
+        position: absolute;
+        top: -13vw;
+        left: 0vw;
+    }
+
+    /* CINDY  LIM SKILLS DESCRIPTION*/
+
+    /* FOOTER */
+    .footer {
+        /* background-color: #460707; */
+        width: 97vw;
+        height: 6vh;
+        margin: 0.5vw;
+        margin-bottom: 1vw;
+        padding-top: 1vh;
+        display: flex;
+        border-top: 0.1vw solid #fff;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-email {
+        color: #fff;
+        font-family: var(--font);
+        font-size: 3vw;
+        font-weight: 600;
+
+    }
+
+    /* FOOTER */
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .nav-container {
+        background-color: transparent;
+    }
+}
+
+
+
+/* HANDPHONE*/
+@media only screen and (max-width: 896px) {
+
+
+    nav.navbar {
+        padding-top: 4vh;
+        padding-bottom: 1vh;
+        /* background-color: transparent; */
+        background-image: none;
+        position: fixed;
+        width: 100vw;
+        z-index: 999;
+        /* border-bottom: 0.01vw solid #fff; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 1s ease-in-out;
+    }
+
+    nav.navbar .nav-container .right-side button {
+        background-color: #fff;
+    }
+
+    .navbar {
+        background-color: #fff;
+        /* color: white; */
+        filter: drop-shadow(0 0 10px #000);
+    }
+
+
+
+    .nav-container {
+        width: 90%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .nav-container a {
+        font-size: 2vh;
+        font-family: var(--font);
+        /* color: rgb(255, 255, 255); */
+    }
+
+    .nav-container a:active {
+        font-size: 1.5vw;
+        font-family: var(--font);
+        color: rgb(255, 255, 255);
+        font-style: none;
+        text-decoration: none;
+    }
+
+    .navbar-collapse ul {
+        gap: 2vw;
+    }
+
+    .above,
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom {
+        display: flex;
+    }
+
+    /* CINDY LIM ABOUT ME DESCRIPTION */
+
+    .about-me {
+        min-width: 80%;
+        /* width: 80%; */
+        /* min-height: 80vh; */
+        height: fit-content;
+        flex-direction: column;
+        padding: 2vh 1vh;
+    }
+
+    .photo img {
+        width: 36vh;
+    }
+
+    .my-description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        margin-top: 0vh;
+    }
+
+    .name {
+        font-family: var(--font);
+        font-size: 12vw;
+        font-weight: 900;
+        font-style: italic;
+        font-stretch: 600;
+        text-align: center;
+        transform: scaleY(0.8);
+    }
+
+    .description {
+        font-family: var(--font);
+        font-size: 1.5vh;
+        text-align: center;
+        margin-bottom: 1.5vw;
+    }
+
+    .sosmed {
+        border-top: 0.1vw solid #000;
+        width: 100%;
+        margin-top: 2vh;
+        padding-top: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2vw;
+        flex-direction: column;
+    }
+
+    .instagram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5vh;
+        font-family: var(--font);
+        font-size: 1.4vh;
+        font-weight: 500;
+    }
+
+    .instagram svg {
+        width: 4vw;
+        height: 4vw;
+        font-weight: 400;
+    }
+
+    .whatsapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font);
+        font-size: 1.4vh;
+        font-weight: 500;
+        gap: 0.5vw;
+    }
+
+    .whatsapp svg {
+        width: 4vw;
+        height: 4vw;
+        font-weight: 400;
+    }
+
+    .email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font);
+        font-size: 1.4vh;
+        font-weight: 500;
+        gap: 0.5vw;
+    }
+
+    .email svg {
+        width: 4vw;
+        height: 4vw;
+        font-weight: 400;
+    }
+
+
+    /* CINDY LIM ABOUT ME DESCRIPTION */
+
+
+    /* CINDY LIM EDUCATION DESCRIPTION */
+
+    .education {
+        min-width: 80%;
+        width: fit-content;
+        /* width:80%;    */
+        min-height: 20vh;
+        height: fit-content;
+        background-color: #fff;
+        border-radius: 1vw;
+        align-items: center;
+        display: flex;
+        padding: 3vw 1vw;
+        flex-direction: column;
+    }
+
+    .edu-title {
+        font-family: var(--genovast);
+        font-size: 7vw;
+        line-height: 6vh;
+        width: 100%;
+        padding: 2vw 2vw;
+        text-align: center;
+        /* width: 100%; */
+        border-bottom: 0.1vw solid #000;
+    }
+
+    .edu-title span {
+        width: fit-content;
+        display: inline;
+    }
+
+    .edu-title p {
+        display: none;
+    }
+
+    .high-school {
+        width: 100%;
+        height: 14vw;
+        font-size: 4vw;
+        font-family: var(--font);
+        font-weight: 900;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-bottom: 0.1vw solid #000;
+    }
+
+    .school-name {
+        width: 70%;
+        text-align: center;
+        transform: scaleY(0.8);
+        line-height: 4vw;
+    }
+
+    .school-major {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2vw;
+    }
+
+    .collage {
+        width: 80%;
+        height: 14vw;
+        font-size: 4vw;
+        font-family: var(--font);
+        font-weight: 900;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .collage-name {
+        width: 100%;
+        text-align: center;
+        transform: scaleY(0.8);
+        line-height: 4vw;
+    }
+
+    .collage-major {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2vw;
+    }
+
+    /* CINDY LIM EDUCATION DESCRIPTION */
+
+
+
+    /* CINDY LIM WORKING EXPERIENCE */
+    .work {
+        width: 80%;
+        min-height: 27vh;
+        height: fit-content;
+        background-color: #fff;
+        border-radius: 1vw;
+        padding: 1vw 1.5vw;
+        margin-bottom: 2vh;
+    }
+
+    .work-title {
+        font-family: var(--genovast);
+        font-size: 6vw;
+        padding: 1vw 1vw;
+        border-bottom: 0.1vw solid #000;
+    }
+
+    .work-place {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* gap: 0.2vw; */
+    }
+
+
+    .work-exp-1 img,
+    .work-exp-2 img,
+    .work-exp-3 img {
+        width: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 0.1vw solid #000;
+        margin-bottom: 1vh;
+    }
+
+    .work-exp {
+        width: 100%;
+        margin-top: 1vh;
+        height: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        font-family: var(--font);
+        border-right: 0vw solid #000;
+        gap: 3vw;
+        border-bottom: 0.1vw solid #000;
+        /* background-color: #d85959; */
+    }
+
+    .work-description {
+        align-items: start;
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        /* background-color: #21dc43; */
+    }
+
+    .period {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 1vw;
+        /* margin-bottom: 1vw; */
+        /* text-align: left; */
+        /* background-color: #5d1a1a; */
+    }
+
+    .month {
+        font-size: 1.5vh;
+        font-weight: 600;
+        width: 70%;
+        text-align: left;
+        margin: 0;
+        /* margin-left: -0.6vw; */
+        /* background-color: orange; */
+    }
+
+    .year {
+        margin-top: -0.2vw;
+        font-size: 4vw;
+        font-weight: 900;
+    }
+
+    .job {
+        font-size: 1.5vh;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .work-exp-3 .work-description {
+        margin-top: 0vh;
+        text-align: center;
+    }
+
+    .work-exp-3 .work-description .period .month {
+        margin-left: 0vw;
+    }
+
+    .work-exp-3 {
+        border-right: 0vw solid;
+        border-bottom: 0vw;
+    }
+
+    /* CINDY LIM WORKING EXPERIENCE */
+
+
+    /* CINDY  LIM SKILLS DESCRIPTION*/
+    .skill {
+        min-width: 80vw;
+        width: 98vw;
+        height: 20vh;
+        position: relative;
+        /* background-color: #a12525; */
+        margin-bottom: 0vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5vw;
+
+    }
+
+    .skill img {
+        width: 100%;
+        position: absolute;
+        top: -13vw;
+        left: 0vw;
+    }
+
+    /* CINDY  LIM SKILLS DESCRIPTION*/
+
+    /* FOOTER */
+    .footer {
+        /* background-color: #460707; */
+        width: 97vw;
+        height: 6vh;
+        margin: 0.5vw;
+        margin-bottom: 1vw;
+        padding-top: 1vh;
+        display: flex;
+        border-top: 0.1vw solid #fff;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-email {
+        color: #fff;
+        font-family: var(--font);
+        font-size: 3vw;
+        font-weight: 600;
+
+    }
+
+    /* FOOTER */
+}

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/genovast');
+
+:root {
+    --font: "Montserrat", sans-serif;
+    --genovast: 'Genovast', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    margin-top: 5vh;
+    background-color: transparent ;
+    width: 90vw;
+    border-bottom: 0.01vw solid #fff;
+}
+
+.nav-container{
+    width: 100%;
+}
+
+.nav-container a{
+    font-size: 1.5vw;
+    font-family: var(--font);
+    
+}
+
+.navbar-collapse ul{
+    gap: 2vw;
+}
+
+section{
+    background-image: url(Image/Cover/background.png);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.nav-container a:hover {
+    color: #FFf;
+}
+
+.cover{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cover .mid img{
+    width: 55vw;
+}
+
+.cover .bottom{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: var(--font);
+    font-size: 1.5vw;
+    width: 90vw;
+    margin-bottom: 5vh;
+    border-bottom: 0.1vw solid #fff;
+}
+
+.text{
+    padding: 1vw;
+}
+
+/* TABLET */
+@media only screen and (max-width: 1280px) {
+    nav {
+            margin-top: 5vh;
+            background-color: transparent;
+            width: 90vw;
+            border-bottom: 0.01vw solid #fff;
+        }
+    
+        .nav-container {
+            width: 100%;
+        }
+    
+        .nav-container a {
+            font-size: 2.5vh;
+            font-family: var(--font);
+    
+        }
+    
+        .navbar-collapse ul {
+            gap: 2vw;
+        }
+    
+        section {
+            background-image: url(Image/Cover/background.png);
+            width: 100vw;
+            height: 100vh;
+            background-repeat: none;
+            background-size: cover;
+        }
+    
+        .cover {    
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .cover .mid img {
+            width: 60vw;
+        }
+    
+        .cover .bottom {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-family: var(--font);
+            font-size: 2.5vw;
+            width: 90vw;
+            margin-bottom: 5vh;
+            border-bottom: 0.1vw solid #fff;
+        }
+    
+        .text {
+            padding: 1vw;
+        }
+}
+
+@media only screen and (max-width: 896px) {
+        nav {
+                margin-top: 5vh;
+                background-color: transparent;
+                width: 90vw;
+                border-bottom: 0.01vw solid #fff;
+            }
+        
+            .nav-container {
+                width: 100%;
+            }
+        
+            .nav-container a {
+                font-size: 2vh;
+                font-family: var(--font);
+        
+            }
+        
+            .navbar-collapse ul {
+                gap: 2vw;
+            }
+        
+            section {
+                background-image: url(Image/Cover/background.png);
+                width: 100vw;
+                height: 100vh;
+                background-repeat: none;
+                background-size: cover;
+            }
+        
+            .cover {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+        
+            .cover .mid img {
+                width: 40vh;
+            }
+        
+            .cover .bottom {
+                display: flex;
+                justify-content: space-between;
+                color: white;
+                font-family: var(--font);
+                font-size: 2.5vw;
+                width: 90vw;
+                margin-bottom: 5vh;
+                border-bottom: 0.1vw solid #fff;
+            }
+        
+            .text {
+                padding: 1vw;
+            }
+}
